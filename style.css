@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* will mainly use these colors */
+:root {
+    --primary-color: #ff7613;
+    --text-color: #727171;
+}
+
+body {
+    color: #ff7613;
+    font-family: inter, serif;
+    margin: 20px;
+    padding: 0;
+
+    background-color: black;
+
+    background-size: cover;
+    
+    }
+
+    h1{
+        text-align: center;
+        color:#ff7613;
+    }
+
+    .h1-first-heading{
+        color: white;
+        font-weight: 200;
+        font-size: clamp(2rem, 5vw, 1rem);
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: -0.8rem;
+    }
+    
+    .h1-second-heading{
+        color: var(--primary-color);
+        font-size: clamp(2.5rem,10vw, 3rem);
+        text-transform: uppercase;
+        display: block;
+    }
+    
+
+    form{
+        max-width: 600px;
+        margin: auto;
+        padding: 20px;
+        background-color:black;
+        box-shadow: 0 4px 8px rgb(137, 172, 175);
+        border-radius: 8px;
+        
+    }
+
+    fieldset{
+        border: 2px solid rgb(45, 55, 104);
+        border-radius: 8px;
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color:black;
+    }
+
+    legend{
+        font-weight: bold;
+        color:#ff7613;
+        text-align: left;
+        font-size: x-large;
+
+    }
+
+    label{
+        display: block;
+        margin-top: 10px;
+        color:#727171;
+
+    }
+
+    input,textarea{
+        width: calc(100% - 16px);
+        padding: 8px;
+        margin-top: 4px ;
+        border: 1px solid rgb(45, 55, 104);
+        border-radius: 4px;
+        box-sizing: border-box;
+
+    }
+
+    button {
+        display: block;
+        font-family: 'Times New Roman', Times, serif;
+        width: 100%;
+        padding: 10px;
+        background-color:#ff7613;
+        font-weight: bold;
+        border-radius: 8px;
+        color: black;
+        cursor: pointer;
+        margin: 10px ;
+        font-size: 18px;
+    }
+
+    button:hover{
+        background-color:#727171;
+    }
+
+
+    .hidden {
+        display: none;
+    }
+
+    /* ----------------Image Styling ------------*/
+#resumePage img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    border: 5px solid #ff7613;
+   
+}
+
+#resumePage img:hover {
+    border-color: var(--text-color);
+   
+}
+
+
+#resumePage h1 {
+    text-align: center;
+    color: #ff7613;
+}
+
+#resumePage h2,p{
+    text-align: center;
+
+}
+
+
+.container, #resumePage {
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    background-color: black;
+    border-radius: 20px; /* Increased border radius */
+    padding: 25px;
+    box-shadow: 0 10px 40px #ff7613; /* Elevated shadow */
+    
+}
+
+#resumePage, p{
+    text-align: center;
+}
+
+
+#resumeContent{
+    background-color: black;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: solid 20px black;
+    text-align: center;
+
+}
+
+
+@media (max-width: 544px) {
+    .container, #resumePage {
+        /* width: 100%; */
+        padding: 12px;
+        justify-content: center;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        font-size: 14px;
+    }
+}
+
+
+
+
